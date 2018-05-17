@@ -33,7 +33,6 @@ public class Ship : MonoBehaviour {
 			float rotationValue = transform.eulerAngles.z * Mathf.Deg2Rad;
 			Thrustdirection.x = Mathf.Cos (rotationValue);
 			Thrustdirection.y = Mathf.Sin (rotationValue);
-
 		}
 	}
 
@@ -46,7 +45,7 @@ public class Ship : MonoBehaviour {
 	{
 		Vector2 position = transform.position;
 
-		// check left, right, top, and bottom sides
+		// warp the screen
 		if (position.x + colliderRadius < ScreenUtils.ScreenLeft ||
 			position.x - colliderRadius > ScreenUtils.ScreenRight)
 		{
@@ -58,7 +57,6 @@ public class Ship : MonoBehaviour {
 			position.y *= -1;
 		}
 
-		// move ship
 		transform.position = position;
 	}
 
