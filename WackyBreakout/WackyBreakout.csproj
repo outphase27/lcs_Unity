@@ -259,8 +259,16 @@
     <Compile Include="Assets\Scripts\Configuration\ConfigurationData.cs" />
     <Compile Include="Assets\Scripts\Configuration\ConfigurationUtils.cs" />
     <Compile Include="Assets\Scripts\GamePlay\Ball.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\BallSpawner.cs" />
     <Compile Include="Assets\Scripts\GamePlay\Block.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\BonusBlock.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\HUD.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\NewLevelBuilder.cs" />
     <Compile Include="Assets\Scripts\GamePlay\Paddle.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\PickUpBlock.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\PickupEffect.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\StandardBlock.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\Timer.cs" />
     <Compile Include="Assets\Scripts\Utils\GameInitializer.cs" />
     <Compile Include="Assets\Scripts\Utils\ScreenUtils.cs" />
   </ItemGroup>

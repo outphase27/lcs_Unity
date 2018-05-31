@@ -22,12 +22,59 @@ public static class ConfigurationUtils
     {
         get { return configurationData.BallImpulseForce; }
     }
+    public static float BallLifeTime
+    {
+        get { return configurationData.BallLifeTime; }
+    }
+    public static float MaximumSpawnTime
+    {
+        get { return configurationData.MaximumSpawnTime; }
+    }
+    public static float MinimumSpawnTime
+    {
+        get { return configurationData.MinimumSpawnTime; }
+    }
+    public static float StandardBlockPoint
+    {
+        get { return configurationData.StandardBlockPoint; }
+    }
+    public static float BonusBlockPoint
+    {
+        get { return configurationData.BonusBlockPoint; }
+    }
+    public static float PickUpBlockPoint
+    {
+        get { return configurationData.PickUpBlockPoint; }
+    }
+    public static float StandardBlockSpawnProbability
+    {
+        get { return configurationData.StandardBlockSpawnProbability; }
+    }
+    public static float BonusBlockSpawnProbability
+    {
+        get { return configurationData.BonusBlockSpawnProbability; }
+    }
+    public static float FreezerBlockSpawnProbability
+    {
+
+        get { return configurationData.FreezerBlockSpawnProbability; }
+    }
+    public static float SpeedUpBlockProbability
+    {
+        get { return configurationData.SpeedUpBlockSpawnProbability; }
+    }
+    public static int BallNumber
+    {
+        get { return configurationData.BallNumber; }
+    }
+
+
 
     #endregion
     
     /// <summary>
     /// Initializes the configuration utils
-    /// </summary>
+    /// </summary>scoreText.text = scorePrefix + score;
     public static void Initialize()
     {
        configurationData = new ConfigurationData();
