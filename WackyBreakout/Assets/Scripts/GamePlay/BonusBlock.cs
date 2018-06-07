@@ -5,8 +5,8 @@ using UnityEngine;
 public class BonusBlock : Block{
 
 	// Use this for initialization
-	void Start () {
-        
+	override protected void Start () {
+        base.Start();
         blockPoints = ConfigurationUtils.BonusBlockPoint;
 
 	}
@@ -15,4 +15,10 @@ public class BonusBlock : Block{
 	void Update () {
 		
 	}
+
+    protected override void OnCollisionEnter2D(Collision2D collision)
+    {
+        AudioManager.Play(AudioClipName.BonusBlock);
+        base.OnCollisionEnter2D(collision);
+    }
 }

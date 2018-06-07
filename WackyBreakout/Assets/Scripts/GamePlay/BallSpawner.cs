@@ -25,17 +25,18 @@ public class BallSpawner : MonoBehaviour {
         spawnLocationMax = new Vector2(
             tempball.transform.position.x + ballColliderHalfWidth,
             tempball.transform.position.y + ballColliderHalfHeight);
-        
         delayRange = ConfigurationUtils.MaximumSpawnTime - ConfigurationUtils.MinimumSpawnTime;
         spawntimer = gameObject.AddComponent<Timer>();
         spawntimer.Duration = RandomSpawnDelay();
+        spawntimer.AddTimerFinishedListener(HandleSpawnTimerFinished);
         spawntimer.Run();
-
         Spawnball();
+        EventManager.AddBallSpawnListener(Spawnball);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        /*
         if(spawntimer.Finished)
         {
             respawn = false;
@@ -44,14 +45,23 @@ public class BallSpawner : MonoBehaviour {
             spawntimer.Run();
 
         }
+        */
         if(respawn)
         {
             Spawnball();
         }
 		
 	}
+    void HandleSpawnTimerFinished()
+    {
+        respawn = false;
+        Spawnball();
+        spawntimer.Duration = RandomSpawnDelay();
+        spawntimer.Run(); 
+    }
 
-    public void Spawnball()
+
+    void Spawnball()
     {
         if (Physics2D.OverlapArea(spawnLocationMin,spawnLocationMax)==null)
         {

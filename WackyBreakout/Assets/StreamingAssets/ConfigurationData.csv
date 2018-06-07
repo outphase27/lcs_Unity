@@ -1,2 +1,2 @@
-paddleMoveUnitsPerSecond,BallImpulseForce,BallLifeTime,MiniSpawnTime,MaxSpawnTime,standardBlock,BonusBlock,PickUpBlock,StdP,BP,FP,SUP,BallNUM
-10,10,10,5,10,10,50,5,0.7,0.1,0.1,0.1,5
+paddleMoveUnitsPerSecond,BallImpulseForce,BallLifeTime,MiniSpawnTime,MaxSpawnTime,standardBlock,BonusBlock,PickUpBlock,StdP,BP,FP,SUP,BallNUM,FreezerEffectDuration,SpeedUpSecond,SpeedUpTimes
+10,5,15,5,10,10,50,5,0.7,0.1,0.1,0.1,5,2,2,1.5

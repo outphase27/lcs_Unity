@@ -67,6 +67,18 @@ public static class ConfigurationUtils
     {
         get { return configurationData.BallNumber; }
     }
+    public static float FreezerEffectDuration
+    {
+        get { return configurationData.FreezerEffectDuration; }
+    }
+    public static float SpeedUpSeconds
+    {
+        get { return configurationData.SpeedUpSeconds; }
+    }
+    public static float SpeedUpTimes
+    {
+        get { return configurationData.SpeedUpTimes; }
+    }
 
 
 

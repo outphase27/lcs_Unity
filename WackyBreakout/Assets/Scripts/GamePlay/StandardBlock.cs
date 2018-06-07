@@ -7,8 +7,10 @@ public class StandardBlock : Block {
     Sprite[] sprites;
 
 	// Use this for initialization
-	void Start () {
-       blockPoints = ConfigurationUtils.StandardBlockPoint;
+	override protected void Start () {
+        base.Start();
+
+        blockPoints = ConfigurationUtils.StandardBlockPoint;
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         int spriteNumber = Random.Range(0, 3);
         spriteRenderer.sprite = sprites[spriteNumber];

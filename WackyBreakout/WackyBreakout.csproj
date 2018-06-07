@@ -256,19 +256,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Audio\AudioClipName.cs" />
+    <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Audio\GameAudioSource.cs" />
     <Compile Include="Assets\Scripts\Configuration\ConfigurationData.cs" />
     <Compile Include="Assets\Scripts\Configuration\ConfigurationUtils.cs" />
+    <Compile Include="Assets\Scripts\Event\AddPoints.cs" />
+    <Compile Include="Assets\Scripts\Event\BallMiss.cs" />
+    <Compile Include="Assets\Scripts\Event\BallSpawn.cs" />
+    <Compile Include="Assets\Scripts\Event\EventManager.cs" />
+    <Compile Include="Assets\Scripts\Event\FreezerEffectActivatedEvent.cs" />
+    <Compile Include="Assets\Scripts\Event\LastBallLost.cs" />
+    <Compile Include="Assets\Scripts\Event\SpeedUpActivatezEvent.cs" />
+    <Compile Include="Assets\Scripts\Event\TimerFinished.cs" />
     <Compile Include="Assets\Scripts\GamePlay\Ball.cs" />
     <Compile Include="Assets\Scripts\GamePlay\BallSpawner.cs" />
     <Compile Include="Assets\Scripts\GamePlay\Block.cs" />
     <Compile Include="Assets\Scripts\GamePlay\BonusBlock.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\GamePlayControl.cs" />
     <Compile Include="Assets\Scripts\GamePlay\HUD.cs" />
     <Compile Include="Assets\Scripts\GamePlay\NewLevelBuilder.cs" />
     <Compile Include="Assets\Scripts\GamePlay\Paddle.cs" />
     <Compile Include="Assets\Scripts\GamePlay\PickUpBlock.cs" />
     <Compile Include="Assets\Scripts\GamePlay\PickupEffect.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\SpeedUpMonitor.cs" />
     <Compile Include="Assets\Scripts\GamePlay\StandardBlock.cs" />
     <Compile Include="Assets\Scripts\GamePlay\Timer.cs" />
+    <Compile Include="Assets\Scripts\Menu\GameoverMenu.cs" />
+    <Compile Include="Assets\Scripts\Menu\HelpMenu.cs" />
+    <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuManager.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuName.cs" />
+    <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\Utils\EffectUtils.cs" />
     <Compile Include="Assets\Scripts\Utils\GameInitializer.cs" />
     <Compile Include="Assets\Scripts\Utils\ScreenUtils.cs" />
   </ItemGroup>
